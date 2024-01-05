@@ -12,13 +12,14 @@
     url("https://db.onlinewebfonts.com/t/26440f756fa58357d028faf61fe27dee.svg#LiquidCrystal")
       format("svg");
 }
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #ede8d8;
-  font-family: liquid_crystal-font;
 }
+
 #body {
   display: inline-block;
   flex-direction: column;
@@ -31,26 +32,30 @@ body {
   border-bottom: 3px solid #888888;
   border-right: 3px solid #888888;
 }
+
 #levelList {
   margin-bottom: 2px;
 }
+
 #header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 6px;
+  margin-bottom: 6px;
   height: 28px;
   border-bottom: 3px solid #ffffff;
   border-right: 3px solid #ffffff;
   border-top: 3px solid #888888;
   border-left: 3px solid #888888;
 }
+
 #header__bombCounter,
 #header__timeCounter {
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-content: center;
+  position: relative;
   height: 30px;
   width: 50px;
   border: 1px solid #888888;
@@ -59,6 +64,7 @@ body {
   font-size: 30px;
   font-family: "LiquidCrystal";
 }
+
 #header__startBtn {
   display: flex;
   justify-content: center;
@@ -70,18 +76,18 @@ body {
   border-bottom: 3px solid #888888;
   border-right: 3px solid #888888;
 }
+
 #board {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(9, 1fr);
   border-bottom: 3px solid #ffffff;
   border-right: 3px solid #ffffff;
   border-top: 3px solid #888888;
   border-left: 3px solid #888888;
-  display: grid;
-  grid-template-columns: repeat(9, 1fr);
-  grid-template-rows: repeat(9, 1fr);
 }
 
 #board div {
-  display: flex;
   height: 16px;
   width: 16px;
   background-color: #c0c0c0;
