@@ -1,6 +1,6 @@
 const levelList = document.getElementById("level");
 const board = document.getElementById("board");
-const bombCounter = document.getElementById("header__bombCounter");
+const bombCounter = document.getElementById("header__bombCounter__num");
 
 const levelData = {
   easy: { divCount: 81, bombCount: 10, gridColumn: 9, gridRow: 9 },
@@ -12,7 +12,7 @@ let intervalID = null;
 
 const setTime = function (time) {
   return function () {
-    document.getElementById("header__timeCounter").textContent = String(
+    document.getElementById("header__timeCounter__num").textContent = String(
       time
     ).padStart(3, "0");
 
