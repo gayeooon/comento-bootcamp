@@ -1,0 +1,51 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+#calculator {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5%;
+  background-color: white;
+  box-shadow: 5px 5px 10px rgb(197, 214, 198);
+}
+
+#cal__input,
+#cal__result {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-content: end;
+  height: 120px;
+  width: 300px;
+  background-color: antiquewhite;
+  color: rgb(87, 86, 86);
+  font-size: 35px;
+}
+
+#cal__result {
+  height: 60px;
+  background-color: azure;
+}
+
+hr {
+  margin: 15px 0px;
+  background-color: rgb(0, 0, 0, 0.1);
+}
+
+#cal__btns button {
+  height: 70px;
+  width: 70px;
+  border: 0px;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+#cal__btns button:hover {
+  filter: brightness(80%);
+}
+
+#cal__btns button:active {
+  transform: scale(0.9);
+}
