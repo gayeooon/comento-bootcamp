@@ -13,22 +13,17 @@
   </head>
   <body>
     <div id="calculator">
-      <div id="cal__input">00</div>
-      <div id="cal__result">00</div>
-      <div id="cal__history"><i class="fa-regular fa-clock"></i></div>
+      <div id="cal__screen">
+        <div class="cal__screen__div" id="cal__screen__prev-input"></div>
+        <div class="cal__screen__div" id="cal__screen__cur-input"></div>
+        <div class="cal__screen__div" id="cal__screen__result"></div>
+      </div>
       <hr />
       <table id="cal__btns">
         <tr>
-          <td><button id="cal__btns__reset">C</button></td>
-          <td><button class="cal__btns__op">()</button></td>
-          <td>
-            <button class="cal__btns__op">
-              <i class="fa-solid fa-percent"></i>
-            </button>
-          </td>
-          <td>
-            <button class="cal__btns__op">
-              <i class="fa-solid fa-divide"></i>
+          <td colspan="4">
+            <button id="cal__history">
+              <i class="fa-regular fa-clock"></i>
             </button>
           </td>
         </tr>
@@ -37,8 +32,8 @@
           <td><button class="cal__btns__num">8</button></td>
           <td><button class="cal__btns__num">9</button></td>
           <td>
-            <button class="cal__btns__op">
-              <i class="fa-solid fa-xmark"></i>
+            <button class="cal__btns__op" id="cal__btns__divide">
+              <i class="fa-solid fa-divide"></i>
             </button>
           </td>
         </tr>
@@ -47,8 +42,8 @@
           <td><button class="cal__btns__num">5</button></td>
           <td><button class="cal__btns__num">6</button></td>
           <td>
-            <button class="cal__btns__op">
-              <i class="fa-solid fa-minus"></i>
+            <button class="cal__btns__op" id="cal__btns__multiply">
+              <i class="fa-solid fa-xmark"></i>
             </button>
           </td>
         </tr>
@@ -57,22 +52,22 @@
           <td><button class="cal__btns__num">2</button></td>
           <td><button class="cal__btns__num">3</button></td>
           <td>
-            <button class="cal__btns__op">
-              <i class="fa-solid fa-plus"></i>
+            <button class="cal__btns__op" id="cal__btns__minus">
+              <i class="fa-solid fa-minus"></i>
             </button>
           </td>
         </tr>
         <tr>
+          <td><button id="cal__btns__reset">C</button></td>
+          <td><button class="cal__btns__num">0</button></td>
           <td>
-            <button class="cal__btns__op">
-              <i class="fa-solid fa-plus-minus"></i>
+            <button class="cal__btns__op" id="cal__btns__equals">
+              <i class="fa-solid fa-equals"></i>
             </button>
           </td>
-          <td><button class="cal__btns__num">0</button></td>
-          <td><button class="cal__btns__op">.</button></td>
           <td>
-            <button id="cal__btns__equals">
-              <i class="fa-solid fa-equals"></i>
+            <button class="cal__btns__op" id="cal__btns__plus">
+              <i class="fa-solid fa-plus"></i>
             </button>
           </td>
         </tr>

@@ -10,28 +10,50 @@ body {
   background-color: white;
   box-shadow: 5px 5px 10px rgb(197, 214, 198);
 }
+#cal__screen {
+  position: relative;
+}
 
-#cal__input,
-#cal__result {
+.cal__screen__div {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   align-content: end;
-  height: 120px;
+  height: 60px;
   width: 300px;
   background-color: antiquewhite;
   color: rgb(87, 86, 86);
   font-size: 35px;
 }
 
-#cal__result {
-  height: 60px;
+#cal__screen__result {
   background-color: azure;
+}
+
+#cal__screen__prev-input {
+  background-color: bisque;
+  color: rgb(87, 86, 86, 0.8);
+  font-size: 25px;
+}
+
+#cal__screen__history {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  overflow: auto;
+  justify-content: flex-start;
+  align-items: flex-end;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: antiquewhite;
+  color: rgb(87, 86, 86);
+  font-size: 25px;
 }
 
 hr {
   margin: 15px 0px;
-  background-color: rgb(0, 0, 0, 0.1);
 }
 
 #cal__btns button {
