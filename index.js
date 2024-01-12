@@ -40,7 +40,6 @@ const setBattery = function () {
   battery--;
 };
 
-const timeInput = document.getElementById("add-alarms__time");
 const alarm = document.getElementById("alarm");
 let counter = 0;
 
@@ -58,7 +57,7 @@ document
       const timeDiv = document.createElement("div");
       timeDiv.classList.add("alarm__item__time");
       newDiv.appendChild(timeDiv);
-      timeDiv.textContent = timeInput.value;
+      timeDiv.textContent = event.target.elements.time.value;
 
       counter++;
     } else {
