@@ -67,7 +67,7 @@ document
   });
 
 alarm.addEventListener("click", function (event) {
-  if (event.target.classList.contains("fa-toggle-on")) {
+  if (event.target.classCList.contains("fa-toggle-on")) {
     const rmDiv = event.target.parentNode;
     rmDiv.remove();
 
