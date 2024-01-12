@@ -14,24 +14,20 @@ body {
   position: relative;
 }
 
-.cal__screen__div {
+.cal__screen__divs {
   display: flex;
+  flex-wrap: wrap;
+  word-break: break-all;
+  overflow: auto;
   justify-content: flex-end;
   align-items: flex-end;
-  align-content: end;
   height: 60px;
   width: 300px;
-  background-color: antiquewhite;
   color: rgb(87, 86, 86);
   font-size: 35px;
 }
 
-#cal__screen__result {
-  background-color: azure;
-}
-
 #cal__screen__prev-input {
-  background-color: bisque;
   color: rgb(87, 86, 86, 0.8);
   font-size: 25px;
 }
@@ -39,16 +35,18 @@ body {
 #cal__screen__history {
   display: flex;
   flex-wrap: wrap;
-  position: absolute;
+  word-break: break-all;
   overflow: auto;
+  position: absolute;
+  padding: 5px;
   justify-content: flex-start;
-  align-items: flex-end;
+  align-items: flex-start;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: antiquewhite;
-  color: rgb(87, 86, 86);
+  background-color: rgb(197, 214, 198);
+  color: rgb(87, 86, 86, 0.8);
   font-size: 25px;
 }
 
@@ -70,4 +68,12 @@ hr {
 
 #cal__btns button:active {
   transform: scale(0.9);
+}
+
+.cal__btns__op {
+  background-color: rgb(197, 214, 198);
+}
+
+#cal__btns__reset {
+  background-color: rgb(236, 185, 127);
 }
