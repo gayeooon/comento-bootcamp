@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup_page</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/2878256247.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="body">
+      <header><h1>Sign Up</h1></header>
+      <form id="sign-up" action="">
+        <div class="sign-up__input">
+          <label for="sign-up__username"
+            ><i class="fa-solid fa-user"></i
+          ></label>
+          <input
+            type="text"
+            id="sign-up__username"
+            name="sign-up__username"
+            placeholder="USERNAME"
+            required
+          />
+          <i class="fa-solid fa-check"></i>
+        </div>
+        <span id="username__error"></span>
+
+        <div class="sign-up__input">
+          <label for="sign-up__password"
+            ><i class="fa-solid fa-lock"></i
+          ></label>
+          <input
+            type="password"
+            id="sign-up__password"
+            name="sign-up__password"
+            placeholder="PASSWORD"
+            required
+          />
+          <i class="fa-regular fa-eye-slash"></i>
+        </div>
+        <span id="password__error"></span>
+        <button id="sign-up__submit">Create Account</button>
+      </form>
+      <dialog>
+        <form method="dialog">
+          <h3>회원가입 완료!</h3>
+          <button>Close</button>
+        </form>
+      </dialog>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
