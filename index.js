@@ -45,6 +45,12 @@ const formSubmit = function (event) {
 form.addEventListener("submit", function (event) {
   formSubmit(event);
 });
+usernameInput.addEventListener("animationend", function () {
+  this.style.animation = "";
+});
+passwordInput.addEventListener("animationend", function () {
+  this.style.animation = "";
+});
 
 // 아이디 정상성 체크
 const isUsernameValid = function () {
