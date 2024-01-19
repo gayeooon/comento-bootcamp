@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>to-do List</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" />
+    <script
+      src="https://kit.fontawesome.com/2878256247.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="body">
+      <header id="title">
+        <h1 class="header" id="header__title">To-do List</h1>
+      </header>
+      <nav id="week-date">
+        <div class="week-date__divs" class="week-date__selected">
+          <div class="week-date__name">Tue</div>
+          <div class="week-date__num">1</div>
+        </div>
+        <div class="week-date__divs">
+          <div class="week-date__name">Wed</div>
+          <div class="week-date__num">2</div>
+        </div>
+      </nav>
+      <div id="task-counter">0 tasks</div>
+      <div id="task-list">
+        <div class="task-list__item">
+          <input type="checkbox" />
+          <div class="task-list__item__content">
+            <div class="task-list__item__title">Meeting with Anna</div>
+            <div class="task-list__item__time">9:30PM</div>
+          </div>
+        </div>
+      </div>
+      <h4>Add new task</h4>
+      <form id="add-task" action="">
+        <div>
+          <label for="task-name">Task Name</label>
+          <input type="text" id="task-name" name="task-title" required />
+
+          <label for="task-time">Time</label>
+          <input type="time" id="task-time" name="task-time" required />
+        </div>
+        <button id="add-task__button"><i class="fa-solid fa-plus"></i></button>
+      </form>
+      <script src="index.js"></script>
+    </div>
+  </body>
+</html>
