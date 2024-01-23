@@ -1,0 +1,109 @@
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-3px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(3px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+#body {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5%;
+  background-color: white;
+  box-shadow: 5px 5px 10px rgb(182, 202, 233);
+}
+
+#sign-up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  margin-top: 20px;
+}
+
+.sign-up__input {
+  display: flex;
+  align-items: center;
+  width: 280px;
+  padding: 0px 10px;
+  gap: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.sign-up__input input {
+  width: 200px;
+  height: 40px;
+  border: none;
+}
+
+#sign-up span {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  color: red;
+}
+
+#sign-up__submit {
+  width: 200px;
+  height: 50px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 30px;
+  transition: all 0.3s;
+}
+#sign-up__submit:hover {
+  filter: brightness(80%);
+}
+
+#sign-up__submit:active {
+  transform: scale(0.9);
+}
+
+.fa-check {
+  color: rgba(0, 128, 0, 0);
+}
+
+.fa-x {
+  color: red;
+}
+
+.fa-eye-slash {
+  color: rgba(0, 0, 0, 0);
+}
+
+dialog {
+  background-color: rgba(182, 202, 233, 0.9);
+  border: none;
+  border-radius: 10px;
+  top: -400px;
+}
+
+dialog form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
+dialog button {
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+}
