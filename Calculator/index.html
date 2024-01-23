@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" />
+    <script
+      src="https://kit.fontawesome.com/2878256247.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="calculator">
+      <div id="cal__screen">
+        <div class="cal__screen__divs" id="cal__screen__prev-input"></div>
+        <div class="cal__screen__divs" id="cal__screen__cur-input"></div>
+        <div class="cal__screen__divs" id="cal__screen__result"></div>
+      </div>
+      <hr />
+      <table id="cal__btns">
+        <tr>
+          <td colspan="4">
+            <button id="cal__history">
+              <i class="fa-regular fa-clock"></i>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td><button class="cal__btns__num">7</button></td>
+          <td><button class="cal__btns__num">8</button></td>
+          <td><button class="cal__btns__num">9</button></td>
+          <td>
+            <button class="cal__btns__op" id="cal__btns__divide">
+              <i class="fa-solid fa-divide"></i>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td><button class="cal__btns__num">4</button></td>
+          <td><button class="cal__btns__num">5</button></td>
+          <td><button class="cal__btns__num">6</button></td>
+          <td>
+            <button class="cal__btns__op" id="cal__btns__multiply">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td><button class="cal__btns__num">1</button></td>
+          <td><button class="cal__btns__num">2</button></td>
+          <td><button class="cal__btns__num">3</button></td>
+          <td>
+            <button class="cal__btns__op" id="cal__btns__minus">
+              <i class="fa-solid fa-minus"></i>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td><button id="cal__btns__reset">C</button></td>
+          <td><button class="cal__btns__num">0</button></td>
+          <td>
+            <button class="cal__btns__op" id="cal__btns__equals">
+              <i class="fa-solid fa-equals"></i>
+            </button>
+          </td>
+          <td>
+            <button class="cal__btns__op" id="cal__btns__plus">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
