@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/2878256247.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://db.onlinewebfonts.com/c/055d8bd397b68d5d121796f56b904640?family=Digital+V2"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="body">
+      <section id="clock">
+        <div id="clock__header">
+          <div id="clock__header__date">
+            <div id="date__year">2023</div>
+            <div id="date__month">04</div>
+            <div id="date__day">30</div>
+          </div>
+          <div id="clock__header__battery">
+            <div id="battery__100"></div>
+            <div id="battery__75"></div>
+            <div id="battery__50"></div>
+            <div id="battery__25"></div>
+          </div>
+        </div>
+        <div id="clock__contents">
+          <div class="clock__panel">
+            <span class="clock__panel__num" id="clock__panel__hour"></span>
+            <span class="clock__panel__bg">88</span>
+          </div>
+          <div class="clock__panel">
+            <span class="clock__panel__num" id="clock__panel__min"></span>
+            <span class="clock__panel__bg">88</span>
+          </div>
+          <div class="clock__panel">
+            <span class="clock__panel__num" id="clock__panel__sec"></span>
+            <span class="clock__panel__bg">88</span>
+          </div>
+        </div>
+      </section>
+      <section id="alarm"></section>
+    </div>
+    <form id="add-alarms">
+      <input
+        type="time"
+        step="1"
+        id="add-alarms__time"
+        name="time"
+        value="00:00:00"
+      />
+      <button type="submit">add alarms</button>
+    </form>
+    <script src="index.js"></script>
+  </body>
+</html>
