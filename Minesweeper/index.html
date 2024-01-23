@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://db.onlinewebfonts.com/c/117bd2ab8652c3570224d92ec0afe4f3?family=F8bitoperator+Regular"
+      rel="stylesheet"
+    />
+    <link
+      href="https://db.onlinewebfonts.com/c/26440f756fa58357d028faf61fe27dee?family=LiquidCrystal"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/2878256247.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="body">
+      <header>
+        <div id="statusBar">
+          <span>💣 Minesweeper</span>
+          <div id="statusBar__screenSetting">
+            <div><i class="fa-solid fa-window-minimize fa-xs"></i></div>
+            <div><i class="fa-regular fa-window-maximize fa-xs"></i></div>
+            <div><i class="fa-solid fa-x fa-xs"></i></div>
+          </div>
+        </div>
+        <select id="level" name="level">
+          <option value="easy" selected>easy</option>
+          <option value="medium">medium</option>
+          <option value="hard">hard</option>
+        </select>
+      </header>
+      <div id="gameContent">
+        <div id="gameHeader">
+          <div class="header__counter">
+            <span class="header__counter__num" id="header__bombCounter__num"
+              >10</span
+            >
+            <span class="header__counter__bg">888</span>
+          </div>
+          <div id="header__startBtn">🙂</div>
+          <div class="header__counter">
+            <span class="header__counter__num" id="header__timeCounter__num"
+              >000</span
+            >
+            <span class="header__counter__bg">888</span>
+          </div>
+        </div>
+        <div id="board">
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
